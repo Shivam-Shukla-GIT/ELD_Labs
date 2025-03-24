@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab_7_HW_2.srcs/sources_1/ip/floating_point_add/sim/floating_point_add.vhd" \
+"../../../../Lab_7_HW_2.srcs/sources_1/ip/floating_point_sqrt/sim/floating_point_sqrt.vhd" \
+"../../../../Lab_7_HW_2.srcs/sources_1/ip/floating_point_div/sim/floating_point_div.vhd" \
+"../../../../Lab_7_HW_2.srcs/sources_1/ip/floating_point_multiply/sim/floating_point_multiply.vhd" \
+"../../../../Lab_7_HW_2.srcs/sources_1/ip/floating_point_log/sim/floating_point_log.vhd" \
+
+# Do not sort compile order
+nosort

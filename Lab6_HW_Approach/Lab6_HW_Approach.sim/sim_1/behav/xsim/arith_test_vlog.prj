@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab6_HW_Approach.srcs/sources_1/new/Top_arith.v" \
+"../../../../../Lab6_HW/Lab6_HW.srcs/sim_1/new/arith_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

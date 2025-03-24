@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 17 10:40:23 2023
+# Process ID: 5984
+# Current directory: D:/Drive D/ELD2023/Lab7_HW_1/Lab7_HW_1.runs/xfft_32_synth_1
+# Command line: vivado.exe -log xfft_32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xfft_32.tcl
+# Log file: D:/Drive D/ELD2023/Lab7_HW_1/Lab7_HW_1.runs/xfft_32_synth_1/xfft_32.vds
+# Journal file: D:/Drive D/ELD2023/Lab7_HW_1/Lab7_HW_1.runs/xfft_32_synth_1\vivado.jou
+#-----------------------------------------------------------
+source xfft_32.tcl -notrace

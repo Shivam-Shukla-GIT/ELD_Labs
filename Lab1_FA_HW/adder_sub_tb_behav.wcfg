@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="adder_sub_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="adder_sub_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="310739512fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="112"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/adder_sub_tb/InA" type="array">
+      <obj_property name="ElementShortName">InA[3:0]</obj_property>
+      <obj_property name="ObjectShortName">InA[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_sub_tb/InB" type="array">
+      <obj_property name="ElementShortName">InB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">InB[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_sub_tb/OutSum" type="array">
+      <obj_property name="ElementShortName">OutSum[4:0]</obj_property>
+      <obj_property name="ObjectShortName">OutSum[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_sub_tb/C" type="logic">
+      <obj_property name="ElementShortName">C</obj_property>
+      <obj_property name="ObjectShortName">C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_sub_tb/InM" type="logic">
+      <obj_property name="ElementShortName">InM</obj_property>
+      <obj_property name="ObjectShortName">InM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_sub_tb/V" type="logic">
+      <obj_property name="ElementShortName">V</obj_property>
+      <obj_property name="ObjectShortName">V</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_sub_tb/SumisZero" type="logic">
+      <obj_property name="ElementShortName">SumisZero</obj_property>
+      <obj_property name="ObjectShortName">SumisZero</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,8 @@
+15:06:32 **** Auto Build of configuration Debug for project Lab118point ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+15:06:32 Build Finished (took 164ms)
+

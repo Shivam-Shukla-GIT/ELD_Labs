@@ -1,0 +1,2 @@
+vio_FA.v,verilog,xil_defaultlib,../../../../Lab2_FA.srcs/sources_1/ip/vio_FA/sim/vio_FA.v,incdir="../../../../Lab2_FA.srcs/sources_1/ip/vio_FA/hdl/verilog"incdir="../../../../Lab2_FA.srcs/sources_1/ip/vio_FA/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

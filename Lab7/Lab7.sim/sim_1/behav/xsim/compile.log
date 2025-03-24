@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Drive D/ELD2023/Lab7/Lab7.srcs/sim_1/new/FFT_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_TB
+INFO: [VRFC 10-2458] undeclared symbol event_frame_started, assumed default net type wire [D:/Drive D/ELD2023/Lab7/Lab7.srcs/sim_1/new/FFT_TB.v:125]
+INFO: [VRFC 10-2458] undeclared symbol event_tlast_unexpected, assumed default net type wire [D:/Drive D/ELD2023/Lab7/Lab7.srcs/sim_1/new/FFT_TB.v:126]
+INFO: [VRFC 10-2458] undeclared symbol event_tlast_missing, assumed default net type wire [D:/Drive D/ELD2023/Lab7/Lab7.srcs/sim_1/new/FFT_TB.v:127]
+INFO: [VRFC 10-2458] undeclared symbol event_status_channel_halt, assumed default net type wire [D:/Drive D/ELD2023/Lab7/Lab7.srcs/sim_1/new/FFT_TB.v:128]
+INFO: [VRFC 10-2458] undeclared symbol event_data_in_channel_halt, assumed default net type wire [D:/Drive D/ELD2023/Lab7/Lab7.srcs/sim_1/new/FFT_TB.v:129]
+INFO: [VRFC 10-2458] undeclared symbol event_data_out_channel_halt, assumed default net type wire [D:/Drive D/ELD2023/Lab7/Lab7.srcs/sim_1/new/FFT_TB.v:130]

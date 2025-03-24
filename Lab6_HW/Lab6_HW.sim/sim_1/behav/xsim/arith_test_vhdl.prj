@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab6_HW.srcs/sources_1/ip/FA_add/sim/FA_add.vhd" \
+"../../../../Lab6_HW.srcs/sources_1/ip/FP_sub/sim/FP_sub.vhd" \
+"../../../../Lab6_HW.srcs/sources_1/ip/FP_recip/sim/FP_recip.vhd" \
+"../../../../Lab6_HW.srcs/sources_1/ip/FP_log/sim/FP_log.vhd" \
+"../../../../Lab6_HW.srcs/sources_1/ip/FP_sqrt/sim/FP_sqrt.vhd" \
+
+# Do not sort compile order
+nosort

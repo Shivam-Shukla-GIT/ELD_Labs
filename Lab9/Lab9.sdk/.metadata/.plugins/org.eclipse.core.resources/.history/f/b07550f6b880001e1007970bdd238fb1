@@ -1,0 +1,100 @@
+#include <complex.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#define N 16
+
+const int rev16[N] = {0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};
+const float complex W1[N] = {1 - 0 * I, 0 - 1 * I, 0 , 0, 1 - 0 * I, 0 - 1 * I, 0 , 0, 1 - 0 * I, 0 - 1 * I, 0 , 0, 1 - 0 * I, 0 - 1 * I, 0 , 0};
+const float complex W2[N] = {1 - 0 * I, (1 - 1 * I) / sqrt(2) , 0 - 1 * I , -0.707107 -0.707107*I,0,0,0,0,1 - 0 * I, (1 - 1 * I) / sqrt(2) , 0 - 1 * I , -0.707107 -0.707107*I,0,0,0,0};
+const float complex W3[N / 2] = {1 - 0*I, 0.923879532511 - 0.382683432365*I, 0.707106781187 - 0.707106781187*I, 0.382683432365 - 0.923879532511*I, 0 - 1*I, -0.382683432365 -0.923879532511*I, -0.707106781187 -0.707106781187*I, -0.923879532511 -0.382683432365*I};
+// for(int i=0; i < N/2; i++){
+//   W3[i] = cos((i*M_PI)/8) - sin((i*M_PI)/8)*I;
+//   //printf("%f %f\n",creal(W3[i]), cimagf(W3[i]));
+// }
+
+void bitreverse(float complex dataIn[N], float complex dataOut[N]) {
+bit_reversal:
+  for (int i = 0; i < N; i++) {
+    dataOut[i] = dataIn[rev16[i]];
+  }
+}
+
+void FFT_stages(float complex FFT_input[N], float complex FFT_output[N]) {
+  float complex temp1[N], temp2[N], temp3[N];
+stage1:
+  for (int i = 0; i < N; i = i + 2) {
+    temp1[i] = FFT_input[i] + FFT_input[i + 1];
+    temp1[i + 1] = FFT_input[i] - FFT_input[i + 1];
+  }
+stage2:
+  for (int i = 0; i < 2; i = i + 1) {
+    temp2[i] = temp1[i] + W1[i] * temp1[i + 2];
+    temp2[i + 2] = temp1[i] - W1[i] * temp1[i + 2];
+  }
+  for (int i = 4; i < 6; i = i + 1) {
+    temp2[i] = temp1[i] + W1[i] * temp1[i + 2];
+    temp2[i + 2] = temp1[i] - W1[i] * temp1[i + 2];
+  }
+  for (int i = 8; i < 10; i = i + 1) {
+    temp2[i] = temp1[i] + W1[i] * temp1[i + 2];
+    temp2[i + 2] = temp1[i] - W1[i] * temp1[i + 2];
+  }
+  for (int i = 12; i < 14; i = i + 1) {
+    temp2[i] = temp1[i] + W1[i] * temp1[i + 2];
+    temp2[i + 2] = temp1[i] - W1[i] * temp1[i + 2];
+  }
+stage3:
+  for (int i = 0; i < N / 4; i = i + 1) {
+    temp3[i] = temp2[i] + W2[i] * temp2[i + 4];
+    temp3[i + 4] = temp2[i] - W2[i] * temp2[i + 4];
+  }
+  for (int i = 8; i < 12; i = i + 1) {
+    temp3[i] = temp2[i] + W2[i] * temp2[i + 4];
+    temp3[i + 4] = temp2[i] - W2[i] * temp2[i + 4];
+  }
+stage4:
+  for (int i = 0; i < N / 2; i = i + 1) {
+    FFT_output[i] = temp3[i] + W3[i] * temp3[i + 8];
+    FFT_output[i + 8] = temp3[i] - W3[i] * temp3[i + 8];
+  }
+
+  //       printf("\n Printinf temp1\r\n");
+  // for (int i = 0; i < N; i++) {
+  //   printf("%f %f\n", creal(temp1[i]), cimagf(temp1[i]));
+  // }
+  //       printf("\n Printinf temp2\r\n");
+  // for (int i = 0; i < N; i++) {
+  //   printf("%f %f\n", creal(temp2[i]), cimagf(temp2[i]));
+  // }
+
+  //       printf("\n Printinf temp3\r\n");
+  // for (int i = 0; i < N; i++) {
+  //   printf("%f %f\n", creal(temp3[i]), cimagf(temp3[i]));
+  // }
+}
+
+
+int main() {
+
+  float complex FFT_input[N] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+
+  float complex FFT_output[N];
+
+  float complex FFT_rev[N];
+
+  bitreverse(FFT_input, FFT_rev);
+  FFT_stages(FFT_rev, FFT_output);
+
+  printf("\n Printinf FFT input\r\n");
+  for (int i = 0; i < N; i++) {
+    printf("%f %f\n", creal(FFT_input[i]), cimagf(FFT_input[i]));
+  }
+
+  printf("\n Printinf FFT output\r\n");
+  for (int i = 0; i < N; i++) {
+      printf("%f %f\n", creal(FFT_output[i]), cimagf(FFT_output[i]));
+  }
+ return 0;
+}

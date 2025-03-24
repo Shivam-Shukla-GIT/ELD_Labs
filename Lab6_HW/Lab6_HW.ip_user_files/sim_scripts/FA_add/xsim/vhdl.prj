@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../Lab6_HW.srcs/sources_1/ip/FA_add/sim/FA_add.vhd" \
+
+nosort

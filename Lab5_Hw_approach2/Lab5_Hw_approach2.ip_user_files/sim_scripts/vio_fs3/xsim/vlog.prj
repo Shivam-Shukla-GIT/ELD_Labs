@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../../Lab5_Hw_approach2.srcs/sources_1/ip/vio_fs3/hdl/verilog" --include "../../../../Lab5_Hw_approach2.srcs/sources_1/ip/vio_fs3/hdl" \
+"../../../../Lab5_Hw_approach2.srcs/sources_1/ip/vio_fs3/sim/vio_fs3.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

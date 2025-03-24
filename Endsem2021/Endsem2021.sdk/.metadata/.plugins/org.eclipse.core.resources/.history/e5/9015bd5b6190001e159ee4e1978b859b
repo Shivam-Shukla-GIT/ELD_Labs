@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include "xaxidma.h"
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include <stdlib.h>
+#include <xtime_l.h>
+#include "dma_init.h"
+#include <math.h>
+
+#define N 1
+
+void FFT_stages(float x, float answer){
+
+		return answer;
+}
+
+int main()
+{
+	init_platform();
+	XTime PL_start_time, PL_end_time;
+	XTime PS_start_time,PS_end_time;
+	const float x = 1;
+	float PS_answer;
+	float PL_answer;
+
+	XTime_SetTime(0);
+	XTime_GetTime(&PS_start_time);
+	FFT_stages(x,PS_answer);
+	XTime_GetTime(&PS_end_time);
+
+
+	int status;
+	XAxiDma AxiDMA;
+	status = DMA_Init(&AxiDMA, XPAR_AXI_DMA_0_DEVICE_ID);
+	if(status)
+		return 1;
+
+	XTime_SetTime(0);
+	XTime_GetTime(&PL_start_time);
+	status = XAxiDma_SimpleTransfer(&AxiDMA, (UINTPTR)PL_answer, (sizeof(float int)*N), XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&AxiDMA, (UINTPTR)x, (sizeof(float int)*N), XAXIDMA_DMA_TO_DEVICE);
+
+	while(XAxiDma_Busy(&AxiDMA, XAXIDMA_DMA_TO_DEVICE));
+	while(XAxiDma_Busy (&AxiDMA, XAXIDMA_DEVICE_TO_DMA));
+	XTime_GetTime(&PL_end_time);
+
+	for(int i=0;i<N;i++){
+		printf("\n\rPS Output- %f, PL Output- %f", PS_answer,PL_answer);
+		float diff1= abs(PS_answer-PL_answer);
+		if(diff1>=0.0001){
+			printf("\n\nData Mismatch found at index %d ",i);
+			break;
+		}
+		else{
+			printf(" DMA Transfer Successful!");
+		}
+	}
+
+
+	printf("\n\r- Execution Time Comparison--");
+	float time=0;
+	time= (float)1.0*(PS_end_time-PS_start_time)/(COUNTS_PER_SECOND/1000000);
+	printf("\n\rExecution time for PS in Micro-seconds: %f", time);
+	time=0;
+	time= (float)1.0 * (PL_end_time-PL_start_time)/(COUNTS_PER_SECOND/1000000);
+	printf("\n\rExecution time for PL in Micro-seconds: %f", time);
+	return 0;
+
+}

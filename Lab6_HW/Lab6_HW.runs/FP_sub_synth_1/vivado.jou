@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Oct 14 19:22:10 2023
+# Process ID: 13060
+# Current directory: D:/Drive D/ELD2023/Lab6_HW/Lab6_HW.runs/FP_sub_synth_1
+# Command line: vivado.exe -log FP_sub.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FP_sub.tcl
+# Log file: D:/Drive D/ELD2023/Lab6_HW/Lab6_HW.runs/FP_sub_synth_1/FP_sub.vds
+# Journal file: D:/Drive D/ELD2023/Lab6_HW/Lab6_HW.runs/FP_sub_synth_1\vivado.jou
+#-----------------------------------------------------------
+source FP_sub.tcl -notrace

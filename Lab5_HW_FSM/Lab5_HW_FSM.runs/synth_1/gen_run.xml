@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1695308528">
+  <File Type="PA-TCL" Name="Vio_wrappper.tcl"/>
+  <File Type="REPORTS-TCL" Name="Vio_wrappper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Vio_wrappper.vds"/>
+  <File Type="RDS-UTIL" Name="Vio_wrappper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Vio_wrappper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Vio_wrappper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/FSM_moore_1101.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab5_Hw_approach2/Lab5_Hw_approach2.srcs/sources_1/imports/new/FSM_moore_1101.v"/>
+        <Attr Name="ImportTime" Val="1695295120"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/clk_div_rtl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab5_Hw_approach2/Lab5_Hw_approach2.srcs/sources_1/imports/new/clk_div_rtl.v"/>
+        <Attr Name="ImportTime" Val="1693886370"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/top_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab5_Hw_approach2/Lab5_Hw_approach2.srcs/sources_1/imports/new/top_counter.v"/>
+        <Attr Name="ImportTime" Val="1695294332"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/Vio_wrappper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab5_Hw_approach2/Lab5_Hw_approach2.srcs/sources_1/imports/new/Vio_wrappper.v"/>
+        <Attr Name="ImportTime" Val="1695299212"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Vio_wrappper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/Zedboard.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab4_HW/Lab4_HW.srcs/constrs_1/imports/new/Zedboard.xdc"/>
+        <Attr Name="ImportTime" Val="1694494022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="vio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>
