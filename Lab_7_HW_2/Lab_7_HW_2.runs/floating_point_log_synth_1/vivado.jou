@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Oct 28 14:40:16 2023
+# Process ID: 30000
+# Current directory: D:/Drive D/ELD2023/Lab_7_HW_2/Lab_7_HW_2.runs/floating_point_log_synth_1
+# Command line: vivado.exe -log floating_point_log.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source floating_point_log.tcl
+# Log file: D:/Drive D/ELD2023/Lab_7_HW_2/Lab_7_HW_2.runs/floating_point_log_synth_1/floating_point_log.vds
+# Journal file: D:/Drive D/ELD2023/Lab_7_HW_2/Lab_7_HW_2.runs/floating_point_log_synth_1\vivado.jou
+#-----------------------------------------------------------
+source floating_point_log.tcl -notrace

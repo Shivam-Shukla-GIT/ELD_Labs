@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Drive D/ELD2023/Lab6_HW/Lab6_HW.srcs/sources_1/new/Top_arith.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_arith
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Drive D/ELD2023/Lab6_HW/Lab6_HW.srcs/sim_1/new/arith_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arith_test

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 21 15:56:06 2023
+# Process ID: 9256
+# Current directory: F:/ELD2023/Lab5_Hw_approach2/Lab5_Hw_approach2.runs/vio_fs3_synth_1
+# Command line: vivado.exe -log vio_fs3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vio_fs3.tcl
+# Log file: F:/ELD2023/Lab5_Hw_approach2/Lab5_Hw_approach2.runs/vio_fs3_synth_1/vio_fs3.vds
+# Journal file: F:/ELD2023/Lab5_Hw_approach2/Lab5_Hw_approach2.runs/vio_fs3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source vio_fs3.tcl -notrace

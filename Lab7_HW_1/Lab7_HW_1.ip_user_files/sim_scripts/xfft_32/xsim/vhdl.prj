@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../Lab7_HW_1.srcs/sources_1/ip/xfft_32/sim/xfft_32.vhd" \
+
+nosort

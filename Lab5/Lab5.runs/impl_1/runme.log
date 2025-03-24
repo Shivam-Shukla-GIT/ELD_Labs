@@ -1,0 +1,84 @@
+
+*** Running vivado
+    with args -log Vio_wrappper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Vio_wrappper.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Vio_wrappper.tcl -notrace
+Command: link_design -top Vio_wrappper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint 'f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/vio_0/vio_0.dcp' for cell 'v1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'your_instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'tc/cm1'
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, tc/cm1/inst/clkin1_ibufg, from the path connected to top-level port: Clk_100M 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'tc/cm1/Clk_100M' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Chipscope 16-324] Core: v1 UUID: 7dc8ae91-e161-5bd8-b94e-978e77ba0c34 
+INFO: [Chipscope 16-324] Core: your_instance_name UUID: c43761e0-c036-5039-8c69-07a263a83e64 
+Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'tc/cm1/inst'
+Finished Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'tc/cm1/inst'
+Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'tc/cm1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1445.672 ; gain = 578.082
+Finished Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'tc/cm1/inst'
+Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/vio_0/vio_0.xdc] for cell 'v1'
+Finished Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/vio_0/vio_0.xdc] for cell 'v1'
+Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [f:/ELD2023/Lab5/Lab5.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [F:/ELD2023/Lab5/Lab5.srcs/constrs_1/imports/new/Zedboard.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [F:/ELD2023/Lab5/Lab5.srcs/constrs_1/imports/new/Zedboard.xdc:362]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/ELD2023/Lab5/Lab5.srcs/constrs_1/imports/new/Zedboard.xdc:362]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [F:/ELD2023/Lab5/Lab5.srcs/constrs_1/imports/new/Zedboard.xdc:367]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/ELD2023/Lab5/Lab5.srcs/constrs_1/imports/new/Zedboard.xdc:367]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [F:/ELD2023/Lab5/Lab5.srcs/constrs_1/imports/new/Zedboard.xdc:372]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/ELD2023/Lab5/Lab5.srcs/constrs_1/imports/new/Zedboard.xdc:372]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/ELD2023/Lab5/Lab5.srcs/constrs_1/imports/new/Zedboard.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1445.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 36 instances
+
+15 Infos, 5 Warnings, 3 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1445.672 ; gain = 1010.492
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1445.672 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: b90b4505
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.377 . Memory (MB): peak = 1458.570 ; gain = 12.898
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.

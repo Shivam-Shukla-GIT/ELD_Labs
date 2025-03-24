@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep  5 20:51:27 2023
+# Process ID: 29912
+# Current directory: F:/ELD2023/Lab3_HW/Lab3_HW.runs/vio_count_synth_1
+# Command line: vivado.exe -log vio_count.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vio_count.tcl
+# Log file: F:/ELD2023/Lab3_HW/Lab3_HW.runs/vio_count_synth_1/vio_count.vds
+# Journal file: F:/ELD2023/Lab3_HW/Lab3_HW.runs/vio_count_synth_1\vivado.jou
+#-----------------------------------------------------------
+source vio_count.tcl -notrace
